@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\momentum.activities.application\momentum.activities.application.csproj" />
+    <ProjectReference Include="..\momentum.activities.application\Momentum.Activities.Application.csproj" />
   </ItemGroup>
 
 </Project>
