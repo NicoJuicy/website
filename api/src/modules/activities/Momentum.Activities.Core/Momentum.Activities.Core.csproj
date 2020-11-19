@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\momentum.activities.core\Momentum.Activities.Core.csproj" />
+    <ProjectReference Include="..\..\..\framework\momentum.framework.core\momentum.framework.core.csproj" />
   </ItemGroup>
 
 </Project>
