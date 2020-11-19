@@ -33,25 +33,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "users", "users", "{10C0B0F4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "activities", "activities", "{DCF10A87-05D4-4518-87E5-989D20F05BB7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Activities.Api", "src\modules\activities\momentum.activities.api\Momentum.Activities.Api.csproj", "{D27EDAC9-BC2D-48CB-80CB-7830565CABE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Activities.Api", "src\modules\activities\Momentum.Activities.Api\Momentum.Activities.Api.csproj", "{D27EDAC9-BC2D-48CB-80CB-7830565CABE1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Maps.Api", "src\modules\maps\momentum.maps.api\Momentum.Maps.Api.csproj", "{2CCD3DDC-E7A0-4220-B8B2-479C5BCB20F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Maps.Api", "src\modules\maps\Momentum.Maps.Api\Momentum.Maps.Api.csproj", "{2CCD3DDC-E7A0-4220-B8B2-479C5BCB20F2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Reports.Api", "src\modules\reports\momentum.reports.api\Momentum.Reports.Api.csproj", "{FD654604-5F60-4EF1-BD22-04DDFC77F96A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Reports.Api", "src\modules\reports\Momentum.Reports.Api\Momentum.Reports.Api.csproj", "{FD654604-5F60-4EF1-BD22-04DDFC77F96A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Runs.Api", "src\modules\runs\momentum.runs.api\Momentum.Runs.Api.csproj", "{A4171CB0-9DD4-4D16-B73C-7C232B30D50C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Runs.Api", "src\modules\runs\Momentum.Runs.Api\Momentum.Runs.Api.csproj", "{A4171CB0-9DD4-4D16-B73C-7C232B30D50C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Stats.Api", "src\modules\stats\momentum.stats.api\Momentum.Stats.Api.csproj", "{B53531F8-93C9-4065-A8A3-DD20A1F8847B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Stats.Api", "src\modules\stats\Momentum.Stats.Api\Momentum.Stats.Api.csproj", "{B53531F8-93C9-4065-A8A3-DD20A1F8847B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Activities.Application", "src\modules\activities\momentum.activities.application\Momentum.Activities.Application.csproj", "{2C832214-C05D-445B-AD9E-087D74686821}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Activities.Application", "src\modules\activities\Momentum.Activities.Application\Momentum.Activities.Application.csproj", "{2C832214-C05D-445B-AD9E-087D74686821}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Activities.Core", "src\modules\activities\momentum.activities.core\Momentum.Activities.Core.csproj", "{459EE01D-31D0-495C-AD60-4C9C958DE630}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Activities.Core", "src\modules\activities\Momentum.Activities.Core\Momentum.Activities.Core.csproj", "{459EE01D-31D0-495C-AD60-4C9C958DE630}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Activities.Infrastructure", "src\modules\activities\momentum.activities.infrastructure\Momentum.Activities.Infrastructure.csproj", "{9B19B738-315E-4EAE-A0D0-A190D3FC1F82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Activities.Infrastructure", "src\modules\activities\Momentum.Activities.Infrastructure\Momentum.Activities.Infrastructure.csproj", "{9B19B738-315E-4EAE-A0D0-A190D3FC1F82}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "framework", "framework", "{6B6B1F1B-5D40-4F5C-AEE9-672ECE9F06CD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "momentum.framework.core", "src\framework\momentum.framework.core\momentum.framework.core.csproj", "{C35273D7-6863-4E9E-9527-4813BEEE959E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Framework.Core", "src\framework\Momentum.Framework.Core\Momentum.Framework.Core.csproj", "{C35273D7-6863-4E9E-9527-4813BEEE959E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Users.Application", "src\modules\users\Momentum.Users.Application\Momentum.Users.Application.csproj", "{68E79832-BA3E-462D-9312-EC4952EFC0A5}"
 EndProject
