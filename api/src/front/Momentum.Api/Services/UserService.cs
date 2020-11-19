@@ -29,7 +29,7 @@ namespace Momentum.Api.Services
             //get user from headers
             return new User()
             {
-                UserId = userId
+                UserId = Guid.Parse(userId)
             };
         }
     }

@@ -16,8 +16,4 @@
     <ProjectReference Include="..\Momentum.Users.Application\Momentum.Users.Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
-  </ItemGroup>
-
 </Project>

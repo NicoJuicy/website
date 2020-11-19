@@ -10,6 +10,8 @@ namespace Momentum.Users.Core.Repository
     {
         Task<IReadOnlyList<Models.User>> Get();
         Task<Models.User> Get(Guid id);
-
+        Task Update(Guid id, Models.User item);
+        Task Save(Models.User item);
+        Task<bool> Delete(Guid id);
     }
 }
