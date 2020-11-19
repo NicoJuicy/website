@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MediatR;
 
-namespace momentum.activities.api.Controllers
+namespace Momentum.Activities.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -23,9 +23,9 @@ namespace momentum.activities.api.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<application.Dto.ActivityDto>> Get()
+        public async Task<IEnumerable<Application.Dto.ActivityDto>> Get()
         {
-            var request = new application.Handlers.Queries.GetActivities();
+            var request = new Application.Handlers.Queries.GetActivities();
             return await m_mediator.Send(request);
         }
     }

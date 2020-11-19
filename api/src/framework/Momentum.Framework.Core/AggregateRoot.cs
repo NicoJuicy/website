@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace momentum.framework.core
+namespace Momentum.Framework.Core
 {
 
     public abstract class AggregateRoot

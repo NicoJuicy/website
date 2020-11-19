@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace momentum.stats.api
+namespace Momentum.Stats.Api
 {
     public class Startup
     {

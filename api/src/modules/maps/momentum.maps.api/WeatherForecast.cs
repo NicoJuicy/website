@@ -1,6 +1,6 @@
 using System;
 
-namespace momentum.maps.api
+namespace Momentum.Maps.Api
 {
     public class WeatherForecast
     {

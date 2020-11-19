@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace momentum.framework.core
+namespace Momentum.Framework.Core
 {
     /// <summary>
     /// 

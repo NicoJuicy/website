@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using momentum.framework.core;
+using Momentum.Framework.Core;
 
-namespace momentum.activities.core.Models
+namespace Momentum.Activities.Core.Models
 {
     public class Activity : AggregateRoot
     {
