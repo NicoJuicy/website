@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using momentum.framework.core.Services;
+using Momentum.Framework.Core.Services;
 
 namespace Momentum.Users.Api.Controllers
 {
