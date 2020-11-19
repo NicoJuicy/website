@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace momentum.users.api
+namespace Momentum.Users.Api
 {
     public class Program
     {

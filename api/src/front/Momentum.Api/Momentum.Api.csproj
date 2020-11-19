@@ -16,5 +16,9 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\framework\momentum.framework.core\momentum.framework.core.csproj" />
+  </ItemGroup>
+
 
 </Project>

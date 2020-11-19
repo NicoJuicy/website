@@ -4,36 +4,40 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using momentum.framework.core.Services;
 
-namespace momentum.users.api.Controllers
+namespace Momentum.Users.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class WeatherForecastController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
         private readonly ILogger<WeatherForecastController> _logger;
+        private IUserService m_userService;
+        private IMediator m_mediator;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(IUserService userService, IMediator mediator, ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
+            m_userService = userService;
+            m_mediator = mediator;
+
         }
 
+
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public async Task<object> GetUserProfile()
         {
-            var rng = new Random();
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            var currentUser = await m_userService.GetCurrentUser();
+
+            var request = new Application.Handlers.Queries.GetProfileByUserId()
             {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+                UserId = currentUser.UserId
+            };
+
+            var response = m_mediator.Send(request);
+
         }
     }
 }
