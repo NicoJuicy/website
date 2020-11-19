@@ -12,4 +12,8 @@
     <ProjectReference Include="..\momentum.activities.application\momentum.activities.application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
 </Project>
