@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace momentum.framework.core.Models
+namespace Momentum.Framework.Core.Models
 {
     public class User
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace momentum.activities.application.Dto
+namespace Momentum.Activities.Application.Dto
 {
     public class ActivityDto
     {

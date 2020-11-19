@@ -5,10 +5,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
 using MediatR;
-using momentum.activities.application.Dto;
-using momentum.activities.core.Repository;
+using Momentum.Activities.Application.Dto;
+using Momentum.Activities.Core.Repository;
 
-namespace momentum.activities.application.Handlers.Queries
+namespace Momentum.Activities.Application.Handlers.Queries
 {
     public class GetActivities : IRequest<IReadOnlyList<Dto.ActivityDto>>
     {

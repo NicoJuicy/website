@@ -1,6 +1,6 @@
 using System;
 
-namespace momentum.runs.api
+namespace Momentum.Runs.Api
 {
     public class WeatherForecast
     {

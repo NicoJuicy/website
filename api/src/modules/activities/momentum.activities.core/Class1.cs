@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace momentum.activities.core
+namespace Momentum.Activities.Core
 {
     public class Class1
     {

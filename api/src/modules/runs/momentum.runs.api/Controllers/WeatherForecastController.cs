@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace momentum.runs.api.Controllers
+namespace Momentum.Runs.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]

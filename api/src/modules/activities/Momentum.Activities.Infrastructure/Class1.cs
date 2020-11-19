@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace momentum.activities.infrastructure
+namespace Momentum.Activities.Infrastructure
 {
     public class Class1
     {
