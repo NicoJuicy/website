@@ -5,11 +5,6 @@ using System.Text;
 namespace momentum.framework.core
 {
 
-    public class User : AggregateRoot
-    {
-
-    }
-
     public abstract class AggregateRoot
     {
         public IList<IInternalEvent> Events { get; private set; } = new List<IInternalEvent>();
