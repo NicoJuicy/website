@@ -107,6 +107,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Stats.Core", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Momentum.Stats.Infrastructure", "src\modules\stats\Momentum.Stats.Infrastructure\Momentum.Stats.Infrastructure.csproj", "{1CD827A4-98F8-4439-A8E5-AE36EF4F4AA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Momentum.Auth.Services.Steam", "src\modules\Auth\Momentum.Auth.Services.Steam\Momentum.Auth.Services.Steam.csproj", "{62747C8A-19CC-42AB-9AAC-7D8C62FB4A32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -261,6 +263,10 @@ Global
 		{1CD827A4-98F8-4439-A8E5-AE36EF4F4AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CD827A4-98F8-4439-A8E5-AE36EF4F4AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CD827A4-98F8-4439-A8E5-AE36EF4F4AA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62747C8A-19CC-42AB-9AAC-7D8C62FB4A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62747C8A-19CC-42AB-9AAC-7D8C62FB4A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62747C8A-19CC-42AB-9AAC-7D8C62FB4A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62747C8A-19CC-42AB-9AAC-7D8C62FB4A32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -315,6 +321,7 @@ Global
 		{7E79987C-0877-46F9-AA39-114F232793DF} = {651B3017-100D-4637-BD2D-419D1BB2B5B5}
 		{03F11B6E-24F6-42AF-8CA5-BE013524AD79} = {651B3017-100D-4637-BD2D-419D1BB2B5B5}
 		{1CD827A4-98F8-4439-A8E5-AE36EF4F4AA0} = {651B3017-100D-4637-BD2D-419D1BB2B5B5}
+		{62747C8A-19CC-42AB-9AAC-7D8C62FB4A32} = {B19EA272-C101-4261-B695-F2FE2073F6BC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D66FB45E-902B-4381-8FC2-BED0EBF32E74}

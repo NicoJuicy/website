@@ -4,13 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using momentum.framework.core;
+using Momentum.Framework.Core;
 
 namespace Momentum.Users.Core.Models
 {
     public class User : AggregateRoot
     {
-        public User()
+        public User(Guid id)
         {
+            Id = id;
+
+            this.AddEvent(new Momentum.Framework.Core.Events.UserEvents.UserCreatedEvent()
+            {
+                UserId = id
+            });
 
         }
         public Guid Id { get; private set; }
@@ -18,25 +25,40 @@ namespace Momentum.Users.Core.Models
         public Enums.Role Role { get; private set; }
         public Enums.Ban Ban { get; private set; }
 
+        public Authentication Authentication { get; private set; }
+
         public static User FromUser(User user)
         {
 
-            var newUser = new User()
+            var newUser = new User(Guid.NewGuid())
             {
                 Ban = user.Ban,
-                Role = user.Role,
-                Id = Guid.NewGuid()
+                Role = user.Role
             };
 
-            newUser.Events.Add(new momentum.framework.core.Events.UserEvents.NewUserEvent()
+            newUser.AddEvent(new Momentum.Framework.Core.Events.UserEvents.UserMigratedEvent()
             {
                 FromUserId = user.Id,
                 UserId = newUser.Id
             });
 
             return newUser;
-
         }
+
+        public void ApplyToken(string refreshToken, DateTime issuedAt)
+        {
+            Authentication = new Authentication()
+            {
+                IssuedAt = issuedAt,
+                RefreshToken = refreshToken
+            };
+        }
+
+        public void RevokeToken()
+        {
+            Authentication = null;
+        }
+
 
 
 
@@ -63,4 +85,6 @@ namespace Momentum.Users.Core.Models
         //});
         //	},
     }
+
+
 }

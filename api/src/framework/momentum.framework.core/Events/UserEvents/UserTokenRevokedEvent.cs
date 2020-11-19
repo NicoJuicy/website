@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MediatR;
 
-namespace Momentum.Users.Application.Dto
+namespace Momentum.Framework.Core.Events.UserEvents
 {
-    public class UserDto
+    public class UserTokenRevokedEvent : IInternalEvent, INotification
     {
         public Guid UserId { get; set; }
-        public string RefreshToken { get; set; }
-        public DateTime IssuedAt { get; set; }
     }
 }

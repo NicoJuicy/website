@@ -10,8 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using momentum.framework.core.Services;
 using Momentum.Api.Services;
+using Momentum.Framework.Core.Services;
 
 namespace Momentum.Api
 {

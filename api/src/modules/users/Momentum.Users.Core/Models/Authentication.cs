@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Momentum.Users.Application.Dto
+namespace Momentum.Users.Core.Models
 {
-    public class UserDto
+    public class Authentication
     {
-        public Guid UserId { get; set; }
         public string RefreshToken { get; set; }
         public DateTime IssuedAt { get; set; }
     }
